@@ -109,14 +109,14 @@ public class MyActivity extends Activity {
 
 	@LongClick
 	void startExtraActivity() {
-		Intent intent = ActivityWithExtra_.intent(this).myDate(new Date()).myMessage("hello !").get();
+		Intent intent = ActivityWithExtra.intent(this).myDate(new Date()).myMessage("hello !").get();
 		intent.putExtra(ActivityWithExtra.MY_INT_EXTRA, 42);
 		startActivity(intent);
 	}
 
 	@Click
 	void startListActivity(View v) {
-		startActivity(new Intent(this, MyListActivity_.class));
+		startActivity(new Intent(this, MyListActivity.class));
 	}
 
 	@Touch
